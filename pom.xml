@@ -16,10 +16,20 @@
 
     <profiles>
         <profile>
-            <id>ecj336</id>
+            <id>ecj341</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.eclipse.jdt</groupId>
+                    <artifactId>ecj</artifactId>
+                    <version>3.41.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>ecj336</id>
             <dependencies>
                 <dependency>
                     <groupId>org.eclipse.jdt</groupId>
@@ -48,6 +58,7 @@
                 <version>3.1.0</version>
                 <configuration>
                     <mainClass>org.example.Main</mainClass>
+                    <cleanupDaemonThreads>false</cleanupDaemonThreads>
                 </configuration>
             </plugin>
         </plugins>
